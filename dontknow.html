@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0005942</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Podstawowe ustawienia --- */
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #000000; /* Czyste czarne tło */
+            color: #FFFFFF; /* Czysta biała czcionka */
+            font-family: 'Press Start 2P', cursive; /* Ustawienie retro czcionki dla całej strony */
+            overflow: hidden; /* Ukrycie pasków przewijania */
+        }
+
+        /* --- Główny kontener centrujący --- */
+        .container {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- Stylizacja liczby (ZMNIEJSZONA) --- */
+        .liczba {
+            font-size: 7vw; /* ZMNIEJSZONY ROZMIAR: z 12vw na 9vw */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Lekki efekt poświaty, jak na starym monitorze */
+        }
+
+        /* --- Stylizacja podpisu (PRZENIESIONY) --- */
+        .podpis {
+            position: fixed; /* Stała pozycja na ekranie */
+            bottom: 20px; /* 20px od dolnej krawędzi */
+            right: 25px; /* 25px od prawej krawędzi */
+            font-weight: bold;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.15); /* Bardzo niska widoczność */
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="liczba" id="wartosc">0005942</div>
+    </div>
+
+    <div class="podpis">Auwra</div>
+
+</body>
+</html>
